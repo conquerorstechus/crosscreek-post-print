@@ -5,9 +5,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="mb-3">
-            <span className="text-xl font-extrabold text-[#c8102e]">POST</span>
-            <span className="text-xl font-extrabold text-white">NET</span>
-            <span className="ml-2 text-xs text-gray-500 uppercase tracking-wide">Tampa</span>
+            <img src="/logo.jpg" alt="Post & Print Logo" className="h-10 mb-3" />
           </div>
           <p className="text-sm text-gray-400 leading-relaxed">
             Locally owned and operated. Design, print, and shipping solutions for your business and

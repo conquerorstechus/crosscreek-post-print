@@ -107,8 +107,8 @@ export default function Services() {
               onClick={() => setActiveTab(cat.id)}
               className={`px-5 py-2 rounded-full text-sm font-semibold transition-colors ${
                 activeTab === cat.id
-                  ? "bg-[#c8102e] text-white"
-                  : "bg-white border border-gray-200 text-gray-700 hover:border-[#c8102e] hover:text-[#c8102e]"
+                  ? "bg-[#003d6b] text-white"
+                  : "bg-white border border-gray-200 text-gray-700 hover:border-[#003d6b] hover:text-[#003d6b]"
               }`}
             >
               {cat.icon} {cat.label}
@@ -122,7 +122,7 @@ export default function Services() {
           <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {active.items.map((item) => (
               <li key={item} className="flex items-center gap-2 text-sm text-gray-700">
-                <span className="w-2 h-2 rounded-full bg-[#c8102e] shrink-0" />
+                <span className="w-2 h-2 rounded-full bg-[#66bb6a] shrink-0" />
                 {item}
               </li>
             ))}
