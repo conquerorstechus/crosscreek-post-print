@@ -4,7 +4,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src="/logo.png.png" alt="Post & Print Logo" className="h-10" />
+          <img src="/logo.png.png" alt="Post & Print Logo" className="h-15" />
         </div>
 
         {/* Nav */}
