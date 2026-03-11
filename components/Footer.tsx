@@ -5,7 +5,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="mb-3">
-            <img src="/logo.png" alt="Post & Print Logo" className="h-8 w-auto object-contain mb-3" />
+            <img src="/logo.jpg" alt="Post & Print Logo" className="h-10 mb-3" />
           </div>
           <p className="text-sm text-gray-400 leading-relaxed">
             Locally owned and operated. Design, print, and shipping solutions for your business and

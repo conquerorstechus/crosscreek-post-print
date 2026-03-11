@@ -2,12 +2,7 @@ export default function Hero() {
   return (
     <section className="bg-[#003d6b] text-white">
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-24">
-        {/* Logo - Centered */}
-        <div className="flex justify-center mb-8">
-          <img src="/logo.png" alt="Post & Print Logo" className="h-16 w-auto object-contain" />
-        </div>
-
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-2xl">
           <p className="text-sm uppercase tracking-widest text-[#66bb6a] mb-3">
             Locally Owned &amp; Operated
           </p>
@@ -17,7 +12,7 @@ export default function Hero() {
           <p className="text-lg text-blue-100 mb-8">
             Bring us your big idea and let us do the rest. Design. Print. Inspire.
           </p>
-          <div className="flex flex-wrap gap-3 justify-center">
+          <div className="flex flex-wrap gap-3">
             <a
               href="mailto:fl178@postnet.com"
               className="bg-[#66bb6a] text-[#003d6b] font-semibold px-6 py-3 rounded hover:bg-[#20b2aa] hover:text-white transition-colors"
