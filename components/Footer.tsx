@@ -113,7 +113,7 @@ export default function Footer() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.8854384654943!2d-82.45138572346444!3d28.050638474243598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c7b8c8c8c8c9%3A0x1234567890abcdef!2s6421%20N%20Florida%20Ave%2C%20Tampa%2C%20FL%2033604!5e0!3m2!1sen!2sus!4v1234567890"
               width="100%"
               height={250}
-              style={{ border: 0, borderRadius: "0.5rem" }}
+              style={{ border: 0, borderRadius: "0.5rem" } as React.CSSProperties}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
