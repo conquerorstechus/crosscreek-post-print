@@ -1,34 +1,24 @@
 export default function Header() {
   return (
-    <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <header className="bg-white/90 backdrop-blur-md border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="flex items-center">
-            <span className="text-2xl font-extrabold tracking-tight text-[#c8102e]">
-              POST
-            </span>
-            <span className="text-2xl font-extrabold tracking-tight text-[#1a1a1a]">
-              NET
-            </span>
-            <span className="ml-2 text-xs text-gray-500 uppercase tracking-wide hidden sm:inline-block">
-              Tampa
-            </span>
-          </div>
+          <img src="/logo.png.png" alt="Post & Print Logo" className="h-15" />
         </div>
 
         {/* Nav */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
-          <a href="#services" className="hover:text-[#c8102e] transition-colors">
+          <a href="#services" className="hover:text-[#003d6b] transition-colors">
             Services
           </a>
-          <a href="#hours" className="hover:text-[#c8102e] transition-colors">
+          <a href="#hours" className="hover:text-[#003d6b] transition-colors">
             Hours
           </a>
-          <a href="#location" className="hover:text-[#c8102e] transition-colors">
+          <a href="#location" className="hover:text-[#003d6b] transition-colors">
             Location
           </a>
-          <a href="#contact" className="hover:text-[#c8102e] transition-colors">
+          <a href="#contact" className="hover:text-[#003d6b] transition-colors">
             Contact
           </a>
         </nav>
@@ -36,7 +26,7 @@ export default function Header() {
         {/* CTA */}
         <a
           href="tel:8135650010"
-          className="bg-[#c8102e] text-white text-sm font-semibold px-4 py-2 rounded hover:bg-[#a50d25] transition-colors"
+          className="bg-[#003d6b] text-white text-sm font-semibold px-4 py-2 rounded hover:bg-[#66bb6a] transition-colors"
         >
           (813) 565-0010
         </a>

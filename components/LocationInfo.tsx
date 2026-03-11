@@ -22,7 +22,7 @@ export default function LocationInfo() {
       <div className="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-10">
         {/* Address */}
         <div id="contact">
-          <h2 className="text-xs font-bold uppercase tracking-widest text-[#c8102e] mb-3">
+          <h2 className="text-xs font-bold uppercase tracking-widest text-[#003d6b] mb-3">
             Address
           </h2>
           <p className="text-gray-800 font-semibold text-lg leading-snug">
@@ -34,7 +34,7 @@ export default function LocationInfo() {
             href="https://www.google.com/maps/dir/?api=1&destination=6421+N.+Florida+Ave+Ste+D,+Tampa,+FL+33604"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-3 text-sm text-[#c8102e] font-semibold hover:underline"
+            className="inline-block mt-3 text-sm text-[#003d6b] font-semibold hover:text-[#66bb6a] transition-colors"
           >
             Get Directions →
           </a>
@@ -42,18 +42,18 @@ export default function LocationInfo() {
 
         {/* Contact */}
         <div>
-          <h2 className="text-xs font-bold uppercase tracking-widest text-[#c8102e] mb-3">
+          <h2 className="text-xs font-bold uppercase tracking-widest text-[#003d6b] mb-3">
             Contact
           </h2>
           <p className="text-gray-800 text-lg font-semibold">
-            <a href="tel:8135650010" className="hover:text-[#c8102e] transition-colors">
+            <a href="tel:8135650010" className="hover:text-[#003d6b] transition-colors">
               (813) 565-0010
             </a>
           </p>
           <p className="text-gray-600 text-sm mt-1">
             <a
               href="mailto:fl178@postnet.com"
-              className="hover:text-[#c8102e] transition-colors"
+              className="hover:text-[#003d6b] transition-colors"
             >
               fl178@postnet.com
             </a>
@@ -61,7 +61,7 @@ export default function LocationInfo() {
           <div className="mt-4 flex gap-3">
             <a
               href="mailto:fl178@postnet.com"
-              className="text-sm bg-[#c8102e] text-white px-4 py-2 rounded font-semibold hover:bg-[#a50d25] transition-colors"
+              className="text-sm bg-[#003d6b] text-white px-4 py-2 rounded font-semibold hover:bg-[#66bb6a] hover:text-[#003d6b] transition-colors"
             >
               Send a Print File
             </a>
@@ -70,7 +70,7 @@ export default function LocationInfo() {
 
         {/* Hours */}
         <div id="hours">
-          <h2 className="text-xs font-bold uppercase tracking-widest text-[#c8102e] mb-3">
+          <h2 className="text-xs font-bold uppercase tracking-widest text-[#003d6b] mb-3">
             Hours
           </h2>
           <ul className="space-y-1 text-sm text-gray-700">
@@ -78,7 +78,7 @@ export default function LocationInfo() {
               <li
                 key={h.day}
                 className={`flex justify-between gap-4 ${
-                  i === hoursIndex ? "font-bold text-[#c8102e]" : ""
+                  i === hoursIndex ? "font-bold text-[#003d6b]" : ""
                 }`}
               >
                 <span>{h.day}</span>

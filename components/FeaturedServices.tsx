@@ -49,13 +49,13 @@ export default function FeaturedServices() {
           {featured.map((service) => (
             <div
               key={service.title}
-              className="border border-gray-200 rounded-xl p-6 flex flex-col gap-3 hover:border-[#c8102e] hover:shadow-sm transition-all"
+              className="border border-gray-200 rounded-xl p-6 flex flex-col gap-3 hover:border-[#003d6b] hover:shadow-sm transition-all"
             >
               <h3 className="text-lg font-bold text-gray-900">{service.title}</h3>
               <p className="text-sm text-gray-600 flex-1">{service.description}</p>
               <a
                 href="mailto:fl178@postnet.com"
-                className="text-sm font-semibold text-[#c8102e] hover:underline self-start"
+                className="text-sm font-semibold text-[#003d6b] hover:text-[#66bb6a] transition-colors self-start"
               >
                 {service.cta} →
               </a>

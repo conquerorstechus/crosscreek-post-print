@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --postnet-red: #c8102e;
-  --postnet-dark: #1a1a1a;
-  --postnet-gray: #f5f5f5;
+  --post-print-navy: #003d6b;
+  --post-print-green: #66bb6a;
+  --post-print-teal: #20b2aa;
+  --post-print-dark: #1a1a1a;
+  --post-print-gray: #f5f5f5;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--postnet-dark);
+  color: var(--post-print-dark);
   background: #ffffff;
 }

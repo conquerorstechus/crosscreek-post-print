@@ -1,84 +1,145 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#1a1a1a] text-gray-400 py-10">
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-        {/* Brand */}
-        <div>
-          <div className="mb-3">
-            <span className="text-xl font-extrabold text-[#c8102e]">POST</span>
-            <span className="text-xl font-extrabold text-white">NET</span>
-            <span className="ml-2 text-xs text-gray-500 uppercase tracking-wide">Tampa</span>
-          </div>
-          <p className="text-sm text-gray-400 leading-relaxed">
-            Locally owned and operated. Design, print, and shipping solutions for your business and
-            personal needs.
-          </p>
-          <a
-            href="https://www.facebook.com/115616746488408"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block mt-4 text-sm text-gray-400 hover:text-white transition-colors"
-          >
-            Facebook ↗
-          </a>
-        </div>
-
-        {/* Quick Links */}
-        <div>
-          <h3 className="text-xs uppercase tracking-widest text-gray-500 mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <a href="#services" className="hover:text-white transition-colors">
-                Services
+    <footer className="bg-[#1a1a1a] text-gray-400">
+      {/* Main Footer Content */}
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+          {/* Quick Actions */}
+          <div>
+            <h3 className="text-xs uppercase tracking-widest text-gray-300 font-bold mb-6">
+              Quick Actions
+            </h3>
+            <div className="space-y-3 flex flex-col">
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=6421+N.+Florida+Ave+Ste+D,+Tampa,+FL+33604"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
+              >
+                <span className="text-lg">📍</span>
+                <span>Get Directions</span>
               </a>
-            </li>
-            <li>
-              <a href="#hours" className="hover:text-white transition-colors">
-                Hours
-              </a>
-            </li>
-            <li>
-              <a href="#location" className="hover:text-white transition-colors">
-                Location
-              </a>
-            </li>
-            <li>
-              <a href="mailto:fl178@postnet.com" className="hover:text-white transition-colors">
-                Send a Print File
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Contact */}
-        <div>
-          <h3 className="text-xs uppercase tracking-widest text-gray-500 mb-3">Contact</h3>
-          <address className="not-italic text-sm space-y-2">
-            <p>6421 N. Florida Ave, Ste D</p>
-            <p>Tampa, FL 33604</p>
-            <p className="pt-1">
-              <a href="tel:8135650010" className="hover:text-white transition-colors">
-                (813) 565-0010
-              </a>
-            </p>
-            <p>
               <a
                 href="mailto:fl178@postnet.com"
-                className="hover:text-white transition-colors"
+                className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
               >
-                fl178@postnet.com
+                <span className="text-lg">📄</span>
+                <span>Get a Quote</span>
               </a>
-            </p>
-          </address>
+              <a
+                href="mailto:fl178@postnet.com"
+                className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
+              >
+                <span className="text-lg">📤</span>
+                <span>Send a File</span>
+              </a>
+              <a
+                href="mailto:fl178@postnet.com"
+                className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
+              >
+                <span className="text-lg">📦</span>
+                <span>Track Package</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Store Details */}
+          <div>
+            <h3 className="text-xs uppercase tracking-widest text-gray-300 font-bold mb-6">
+              Store Details
+            </h3>
+
+            {/* Address */}
+            <div className="mb-6">
+              <h4 className="text-xs uppercase tracking-widest text-[#003d6b] font-semibold mb-2">
+                Address
+              </h4>
+              <address className="not-italic text-sm text-gray-400 leading-relaxed">
+                6421 N. Florida Ave, Ste D
+                <br />
+                Tampa, FL 33604
+              </address>
+            </div>
+
+            {/* Phone */}
+            <div className="mb-6">
+              <h4 className="text-xs uppercase tracking-widest text-[#003d6b] font-semibold mb-2">
+                Phone
+              </h4>
+              <p className="text-sm">
+                <a
+                  href="tel:8135650010"
+                  className="text-gray-400 hover:text-[#66bb6a] transition-colors"
+                >
+                  (813) 565-0010
+                </a>
+              </p>
+            </div>
+
+            {/* Email */}
+            <div className="mb-6">
+              <h4 className="text-xs uppercase tracking-widest text-[#003d6b] font-semibold mb-2">
+                Email
+              </h4>
+              <p className="text-sm">
+                <a
+                  href="mailto:fl178@postnet.com"
+                  className="text-gray-400 hover:text-[#66bb6a] transition-colors"
+                >
+                  fl178@postnet.com
+                </a>
+              </p>
+            </div>
+
+            {/* Hours */}
+            <div>
+              <h4 className="text-xs uppercase tracking-widest text-[#003d6b] font-semibold mb-2">
+                Hours
+              </h4>
+              <ul className="text-sm text-gray-400 space-y-1">
+                <li>Mon - Fri: 8AM - 6PM</li>
+                <li>Saturday: 9AM - 5PM</li>
+                <li>Sunday: Closed</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Map */}
+          <div>
+            <h3 className="text-xs uppercase tracking-widest text-gray-300 font-bold mb-6">
+              Location
+            </h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.8854384654943!2d-82.45138572346444!3d28.050638474243598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c7b8c8c8c8c9%3A0x1234567890abcdef!2s6421%20N%20Florida%20Ave%2C%20Tampa%2C%20FL%2033604!5e0!3m2!1sen!2sus!4v1234567890"
+              width="100%"
+              height={250}
+              style={{ border: 0, borderRadius: "0.5rem" } as React.CSSProperties}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="rounded-lg shadow-md"
+            />
+          </div>
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 mt-8 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between gap-2 text-xs text-gray-600">
-        <p>© {new Date().getFullYear()} PostNet Tampa. All rights reserved.</p>
-        <div className="flex gap-4">
-          <a href="#" className="hover:text-gray-400 transition-colors">
-            Privacy Policy
-          </a>
+      {/* Footer Bottom */}
+      <div className="border-t border-gray-800">
+        <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+          <p>© {new Date().getFullYear()} Post & Print Tampa. All rights reserved.</p>
+          <div className="flex gap-6">
+            <a href="#" className="hover:text-gray-300 transition-colors">
+              Privacy Policy
+            </a>
+            <a
+              href="https://www.facebook.com/115616746488408"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-300 transition-colors"
+            >
+              Facebook
+            </a>
+          </div>
         </div>
       </div>
     </footer>
