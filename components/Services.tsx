@@ -1,95 +1,132 @@
 "use client";
 
-const services = [
+import { useState } from "react";
+
+const serviceCategories = [
   {
-    id: "digital-printing",
-    title: "Digital Printing",
-    description:
-      "High-quality digital printing for all your business needs, from business cards to large format prints.",
+    id: "design",
+    label: "Design",
+    icon: "✏️",
+    description: "Custom graphic design tailored to your brand.",
+    items: ["Graphic Design", "Menu Printing", "Presentation Materials"],
+  },
+  {
+    id: "print",
+    label: "Print",
     icon: "🖨️",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=350&fit=crop",
+    description: "Full-service printing for every need.",
+    items: [
+      "3D Printing",
+      "Banners",
+      "Blueprints",
+      "Brochures",
+      "Business Cards",
+      "Calendars",
+      "Canvas Wraps",
+      "Carbonless Forms",
+      "Copies",
+      "Custom Greeting Cards",
+      "Direct Mail",
+      "Door Hangers",
+      "Envelopes",
+      "Every Door Direct Mail",
+      "Flyers",
+      "Forms",
+      "Invitations",
+      "Labels",
+      "Letterhead",
+      "Newsletters",
+      "Postcards",
+      "Posters",
+      "Presentation Materials",
+      "Promotional Products",
+      "Signs",
+      "Stationery",
+      "Stickers",
+      "Trade Show Displays",
+      "Vehicle Graphics",
+      "Yard Signs",
+    ],
   },
   {
-    id: "custom-design",
-    title: "Custom Design",
-    description:
-      "Professional design services to bring your vision to life with stunning graphics and layouts.",
-    icon: "🎨",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=350&fit=crop",
+    id: "ship",
+    label: "Ship",
+    icon: "📦",
+    description: "Ship with all major carriers — we pack it for you.",
+    items: [
+      "DHL Drop Offs",
+      "DHL Shipping",
+      "FedEx Drop Offs",
+      "FedEx Shipping",
+      "International Shipping",
+      "Packaging Services",
+      "Packaging Supplies",
+      "UPS Drop Offs",
+      "UPS Shipping",
+      "US Postal Service",
+    ],
   },
   {
-    id: "shipping",
-    title: "Shipping Services",
-    description:
-      "UPS, FedEx, and USPS shipping solutions. Pack & ship, mailbox services, and freight shipping available.",
-    icon: "🚚",
-    image: "https://images.unsplash.com/photo-1578622746212-335121b76e3d?w=500&h=350&fit=crop",
-  },
-  {
-    id: "document-services",
-    title: "Document Services",
-    description:
-      "Binding, laminating, copying, and finishing services for your business documents.",
-    icon: "📋",
-    image: "https://images.unsplash.com/photo-1556155092-490a1ba6d35b?w=500&h=350&fit=crop",
+    id: "etc",
+    label: "More",
+    icon: "⚙️",
+    description: "Extra business support services.",
+    items: [
+      "Binding",
+      "Computer Rental",
+      "Fax",
+      "Laminating",
+      "Mailbox Rental",
+      "Notary Public",
+      "Passport Photos",
+      "Scanning Services",
+      "Shredding Services",
+      "Virtual Mailbox Rental",
+    ],
   },
 ];
 
 export default function Services() {
+  const [activeTab, setActiveTab] = useState("print");
+
+  const active = serviceCategories.find((c) => c.id === activeTab)!;
+
   return (
-    <section id="services" className="bg-white py-16 md:py-20">
+    <section id="services" className="bg-gray-50 py-14">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
-            Our Services
-          </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Comprehensive printing and signage solutions tailored to your business needs
-          </p>
+        <h2 className="text-3xl font-extrabold text-gray-900 mb-2">Our Services</h2>
+        <p className="text-gray-500 mb-8">
+          Everything your business needs — design, print, ship, and more.
+        </p>
+
+        {/* Tab bar */}
+        <div className="flex gap-2 flex-wrap mb-8">
+          {serviceCategories.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => setActiveTab(cat.id)}
+              className={`px-5 py-2 rounded-full text-sm font-semibold transition-colors ${
+                activeTab === cat.id
+                  ? "bg-[#003d6b] text-white"
+                  : "bg-white border border-gray-200 text-gray-700 hover:border-[#003d6b] hover:text-[#003d6b]"
+              }`}
+            >
+              {cat.icon} {cat.label}
+            </button>
+          ))}
         </div>
 
-        {/* Service Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service) => (
-            <div
-              key={service.id}
-              className="bg-white rounded-lg overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow"
-            >
-              {/* Service Image */}
-              <div className="relative h-48 overflow-hidden bg-gray-200">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-
-              {/* Card Content */}
-              <div className="p-6 text-center">
-                {/* Icon */}
-                <div className="text-4xl mb-4 flex justify-center">
-                  <span className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-2xl">
-                    {service.icon}
-                  </span>
-                </div>
-
-                {/* Title */}
-                <h3 className="text-lg font-bold text-gray-900 mb-3">{service.title}</h3>
-
-                {/* Description */}
-                <p className="text-sm text-gray-600 leading-relaxed">{service.description}</p>
-
-                {/* CTA Button */}
-                <a
-                  href="mailto:fl178@postnet.com"
-                  className="inline-block mt-4 text-sm font-semibold text-[#003d6b] hover:text-[#66bb6a] transition-colors"
-                >
-                  Learn More →
-                </a>
-              </div>
-            </div>
-          ))}
+        {/* Service list */}
+        <div className="bg-white rounded-xl border border-gray-200 p-6 md:p-8">
+          <p className="text-gray-500 text-sm mb-5">{active.description}</p>
+          <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+            {active.items.map((item) => (
+              <li key={item} className="flex items-center gap-2 text-sm text-gray-700">
+                <span className="w-2 h-2 rounded-full bg-[#66bb6a] shrink-0" />
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
