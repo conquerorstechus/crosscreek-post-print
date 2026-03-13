@@ -39,19 +39,19 @@ const featured = [
 
 export default function FeaturedServices() {
   return (
-    <section className="bg-white py-14 border-t border-gray-100">
+    <section className="bg-[#003d6b] py-14">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-extrabold text-gray-900 mb-2">Featured Services</h2>
-        <p className="text-gray-500 mb-10">
+        <h2 className="text-3xl font-extrabold text-white mb-2">Featured Services</h2>
+        <p className="text-blue-100 mb-10">
           Locally owned and focused on exceptional customer service.
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {featured.map((service) => (
             <div
               key={service.title}
-              className="border border-gray-200 rounded-xl p-6 flex flex-col gap-3 hover:border-[#003d6b] hover:shadow-sm transition-all"
+              className="bg-white rounded-xl p-6 flex flex-col gap-3 hover:shadow-lg transition-all border border-transparent hover:border-[#66bb6a]"
             >
-              <h3 className="text-lg font-bold text-gray-900">{service.title}</h3>
+              <h3 className="text-lg font-bold text-[#003d6b]">{service.title}</h3>
               <p className="text-sm text-gray-600 flex-1">{service.description}</p>
               <a
                 href="mailto:info@postandprint.com"

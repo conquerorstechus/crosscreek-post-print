@@ -7,12 +7,12 @@ export const metadata = {
 
 export default function EstimatePage() {
   return (
-    <main className="bg-gray-50 min-h-screen py-12">
+    <main className="bg-[#003d6b] min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4">
         {/* Page Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-extrabold text-gray-900 mb-3">Get an Estimate</h1>
-          <p className="text-lg text-gray-600">
+          <h1 className="text-4xl font-extrabold text-white mb-3">Get an Estimate</h1>
+          <p className="text-lg text-blue-100">
             Request a shipping or service estimate for your printing, design, or shipping needs
           </p>
         </div>
@@ -22,8 +22,8 @@ export default function EstimatePage() {
           {/* Sidebar */}
           <div className="lg:col-span-1">
             {/* Find a Location */}
-            <div className="bg-white rounded-lg border border-gray-200 p-6 mb-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">Find a Location</h3>
+            <div className="bg-white rounded-lg border border-transparent p-6 mb-6 shadow-lg">
+              <h3 className="text-lg font-bold text-[#003d6b] mb-4">Find a Location</h3>
               <p className="text-sm text-gray-600 mb-4">
                 To locate nearest Post & Print store, please enter either your city, state, or zip code below.
               </p>
@@ -48,8 +48,8 @@ export default function EstimatePage() {
             </div>
 
             {/* Track a Package */}
-            <div className="bg-white rounded-lg border border-gray-200 p-6 mb-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">Track a Package</h3>
+            <div className="bg-white rounded-lg border border-transparent p-6 mb-6 shadow-lg">
+              <h3 className="text-lg font-bold text-[#003d6b] mb-4">Track a Package</h3>
               <div className="space-y-2">
                 <label className="block text-xs uppercase tracking-widest text-[#003d6b] font-semibold mb-1">
                   Enter Tracking Number <span className="text-red-500">*</span>
@@ -71,11 +71,11 @@ export default function EstimatePage() {
             </div>
 
             {/* Carrier Logos */}
-            <div className="bg-white rounded-lg border border-gray-200 p-6">
-              <h3 className="text-sm font-bold text-gray-700 mb-4">Shipping Partners</h3>
+            <div className="bg-white rounded-lg border border-transparent p-6 shadow-lg">
+              <h3 className="text-sm font-bold text-[#003d6b] mb-4">Shipping Partners</h3>
               <div className="space-y-3">
                 <p className="text-xs text-gray-600 font-medium">We ship with all major carriers:</p>
-                <div className="grid grid-cols-2 gap-2 text-xs text-gray-700 font-semibold">
+                <div className="grid grid-cols-2 gap-2 text-xs text-[#003d6b] font-semibold">
                   <div className="flex items-center justify-center px-2 py-2 border border-gray-200 rounded bg-gray-50 text-center">
                     FedEx
                   </div>
@@ -95,7 +95,7 @@ export default function EstimatePage() {
 
           {/* Main Form */}
           <div className="lg:col-span-3">
-            <div className="bg-white rounded-lg border border-gray-200 p-8">
+            <div className="bg-white rounded-lg border border-transparent p-8 shadow-lg">
               <EstimateForm />
             </div>
           </div>

@@ -1,17 +1,17 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#1a1a1a] text-gray-400">
+    <footer className="bg-white text-gray-700 border-t border-gray-200">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           {/* Logo Section */}
           <div className="md:col-span-3 mb-4">
-            <img src="/logo-full.png" alt="Post & Print Logo" className="h-16 w-auto object-contain" />
+            <img src="/logo-footer.png" alt="Post & Print Logo" className="h-16 w-auto object-contain" />
           </div>
 
           {/* Quick Actions */}
           <div>
-            <h3 className="text-xs uppercase tracking-widest text-gray-300 font-bold mb-6">
+            <h3 className="text-xs uppercase tracking-widest text-[#003d6b] font-bold mb-6">
               Quick Actions
             </h3>
             <div className="space-y-3 flex flex-col">
@@ -19,28 +19,28 @@ export default function Footer() {
                 href="https://www.google.com/maps/dir/?api=1&destination=10861+Cross+Creek+Blvd,+Tampa,+FL+33647"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
+                className="flex items-center gap-3 text-sm text-gray-700 hover:text-[#66bb6a] transition-colors py-2"
               >
                 <span className="text-lg">📍</span>
                 <span>Get Directions</span>
               </a>
               <a
                 href="mailto:info@postandprint.com"
-                className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
+                className="flex items-center gap-3 text-sm text-gray-700 hover:text-[#66bb6a] transition-colors py-2"
               >
                 <span className="text-lg">📄</span>
                 <span>Get a Quote</span>
               </a>
               <a
                 href="mailto:info@postandprint.com"
-                className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
+                className="flex items-center gap-3 text-sm text-gray-700 hover:text-[#66bb6a] transition-colors py-2"
               >
                 <span className="text-lg">📤</span>
                 <span>Send a File</span>
               </a>
               <a
                 href="mailto:info@postandprint.com"
-                className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
+                className="flex items-center gap-3 text-sm text-gray-700 hover:text-[#66bb6a] transition-colors py-2"
               >
                 <span className="text-lg">📦</span>
                 <span>Track Package</span>
@@ -50,7 +50,7 @@ export default function Footer() {
 
           {/* Store Details */}
           <div>
-            <h3 className="text-xs uppercase tracking-widest text-gray-300 font-bold mb-6">
+            <h3 className="text-xs uppercase tracking-widest text-[#003d6b] font-bold mb-6">
               Store Details
             </h3>
 
@@ -59,7 +59,7 @@ export default function Footer() {
               <h4 className="text-xs uppercase tracking-widest text-[#003d6b] font-semibold mb-2">
                 Address
               </h4>
-              <address className="not-italic text-sm text-gray-400 leading-relaxed">
+              <address className="not-italic text-sm text-gray-700 leading-relaxed">
                 10861 Cross Creek Blvd
                 <br />
                 Tampa, FL 33647
@@ -74,7 +74,7 @@ export default function Footer() {
               <p className="text-sm">
                 <a
                   href="tel:8134019820"
-                  className="text-gray-400 hover:text-[#66bb6a] transition-colors"
+                  className="text-gray-700 hover:text-[#66bb6a] transition-colors font-semibold"
                 >
                   (813) 401-9820
                 </a>
@@ -89,7 +89,7 @@ export default function Footer() {
               <p className="text-sm">
                 <a
                   href="mailto:info@postandprint.com"
-                  className="text-gray-400 hover:text-[#66bb6a] transition-colors"
+                  className="text-gray-700 hover:text-[#66bb6a] transition-colors"
                 >
                   info@postandprint.com
                 </a>
@@ -101,7 +101,7 @@ export default function Footer() {
               <h4 className="text-xs uppercase tracking-widest text-[#003d6b] font-semibold mb-2">
                 Hours
               </h4>
-              <ul className="text-sm text-gray-400 space-y-1">
+              <ul className="text-sm text-gray-700 space-y-1">
                 <li>Mon - Fri: 8AM - 6PM</li>
                 <li>Saturday: 9AM - 5PM</li>
                 <li>Sunday: Closed</li>
@@ -111,7 +111,7 @@ export default function Footer() {
 
           {/* Map */}
           <div>
-            <h3 className="text-xs uppercase tracking-widest text-gray-300 font-bold mb-6">
+            <h3 className="text-xs uppercase tracking-widest text-[#003d6b] font-bold mb-6">
               Location
             </h3>
             <iframe
@@ -129,18 +129,18 @@ export default function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+      <div className="border-t border-gray-200 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-600">
           <p>© {new Date().getFullYear()} Post & Print Tampa. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-gray-300 transition-colors">
+            <a href="#" className="hover:text-[#003d6b] transition-colors">
               Privacy Policy
             </a>
             <a
               href="https://www.facebook.com/115616746488408"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-300 transition-colors"
+              className="hover:text-[#003d6b] transition-colors"
             >
               Facebook
             </a>

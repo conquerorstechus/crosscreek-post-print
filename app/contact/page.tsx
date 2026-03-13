@@ -23,19 +23,19 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Content */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-[#003d6b]">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-12">
             {/* Contact Information */}
             <div className="md:col-span-1">
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">Contact Information</h2>
+              <h2 className="text-2xl font-bold text-white mb-8">Contact Information</h2>
 
               {/* Address */}
               <div className="mb-8">
-                <h3 className="text-sm uppercase tracking-widest text-[#003d6b] font-bold mb-3">
+                <h3 className="text-sm uppercase tracking-widest text-[#66bb6a] font-bold mb-3">
                   Address
                 </h3>
-                <address className="not-italic text-gray-700 leading-relaxed">
+                <address className="not-italic text-blue-100 leading-relaxed">
                   10861 Cross Creek Blvd
                   <br />
                   Tampa, FL 33647
@@ -44,7 +44,7 @@ export default function ContactPage() {
                   href="https://www.google.com/maps/dir/?api=1&destination=10861+Cross+Creek+Blvd,+Tampa,+FL+33647"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-3 text-sm text-[#003d6b] font-semibold hover:text-[#66bb6a] transition-colors"
+                  className="inline-block mt-3 text-sm text-[#66bb6a] font-semibold hover:text-white transition-colors"
                 >
                   Get Directions →
                 </a>
@@ -52,13 +52,13 @@ export default function ContactPage() {
 
               {/* Phone */}
               <div className="mb-8">
-                <h3 className="text-sm uppercase tracking-widest text-[#003d6b] font-bold mb-3">
+                <h3 className="text-sm uppercase tracking-widest text-[#66bb6a] font-bold mb-3">
                   Phone
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-blue-100">
                   <a
                     href="tel:8134019820"
-                    className="text-lg font-semibold text-[#003d6b] hover:text-[#66bb6a] transition-colors"
+                    className="text-lg font-semibold text-white hover:text-[#66bb6a] transition-colors"
                   >
                     (813) 401-9820
                   </a>
@@ -67,13 +67,13 @@ export default function ContactPage() {
 
               {/* Email */}
               <div className="mb-8">
-                <h3 className="text-sm uppercase tracking-widest text-[#003d6b] font-bold mb-3">
+                <h3 className="text-sm uppercase tracking-widest text-[#66bb6a] font-bold mb-3">
                   Email
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-blue-100">
                   <a
                     href="mailto:info@postandprint.com"
-                    className="text-[#003d6b] hover:text-[#66bb6a] transition-colors"
+                    className="text-white hover:text-[#66bb6a] transition-colors"
                   >
                     info@postandprint.com
                   </a>
@@ -82,10 +82,10 @@ export default function ContactPage() {
 
               {/* Hours */}
               <div>
-                <h3 className="text-sm uppercase tracking-widest text-[#003d6b] font-bold mb-3">
+                <h3 className="text-sm uppercase tracking-widest text-[#66bb6a] font-bold mb-3">
                   Hours
                 </h3>
-                <ul className="space-y-1 text-gray-700">
+                <ul className="space-y-1 text-blue-100">
                   <li>
                     <strong>Mon - Fri:</strong> 8AM - 6PM
                   </li>
@@ -100,7 +100,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="md:col-span-2 bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
+            <div className="md:col-span-2 bg-white rounded-xl p-8 shadow-lg">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
               <ContactForm />
             </div>
