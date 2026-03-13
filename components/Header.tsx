@@ -9,16 +9,16 @@ export default function Header() {
 
         {/* Nav */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
-          <a href="#services" className="hover:text-[#003d6b] transition-colors">
+          <a href="/#services" className="hover:text-[#003d6b] transition-colors">
             Services
           </a>
-          <a href="#hours" className="hover:text-[#003d6b] transition-colors">
+          <a href="/#hours" className="hover:text-[#003d6b] transition-colors">
             Hours
           </a>
-          <a href="#location" className="hover:text-[#003d6b] transition-colors">
+          <a href="/#location" className="hover:text-[#003d6b] transition-colors">
             Location
           </a>
-          <a href="#contact" className="hover:text-[#003d6b] transition-colors">
+          <a href="/contact" className="hover:text-[#003d6b] transition-colors">
             Contact
           </a>
         </nav>
