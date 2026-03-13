@@ -36,12 +36,12 @@ export default function ContactPage() {
                   Address
                 </h3>
                 <address className="not-italic text-gray-700 leading-relaxed">
-                  6421 N. Florida Ave, Ste D
+                  10861 Cross Creek Blvd
                   <br />
-                  Tampa, FL 33604
+                  Tampa, FL 33647
                 </address>
                 <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=6421+N.+Florida+Ave+Ste+D,+Tampa,+FL+33604"
+                  href="https://www.google.com/maps/dir/?api=1&destination=10861+Cross+Creek+Blvd,+Tampa,+FL+33647"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block mt-3 text-sm text-[#003d6b] font-semibold hover:text-[#66bb6a] transition-colors"
@@ -57,10 +57,10 @@ export default function ContactPage() {
                 </h3>
                 <p className="text-gray-700">
                   <a
-                    href="tel:8135650010"
+                    href="tel:8134019820"
                     className="text-lg font-semibold text-[#003d6b] hover:text-[#66bb6a] transition-colors"
                   >
-                    (813) 565-0010
+                    (813) 401-9820
                   </a>
                 </p>
               </div>

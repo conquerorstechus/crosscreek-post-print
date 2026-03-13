@@ -26,12 +26,12 @@ export default function LocationInfo() {
             Address
           </h2>
           <p className="text-gray-800 font-semibold text-lg leading-snug">
-            6421 N. Florida Ave, Ste D
+            10861 Cross Creek Blvd
             <br />
-            Tampa, FL 33604
+            Tampa, FL 33647
           </p>
           <a
-            href="https://www.google.com/maps/dir/?api=1&destination=6421+N.+Florida+Ave+Ste+D,+Tampa,+FL+33604"
+            href="https://www.google.com/maps/dir/?api=1&destination=10861+Cross+Creek+Blvd,+Tampa,+FL+33647"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-3 text-sm text-[#003d6b] font-semibold hover:text-[#66bb6a] transition-colors"
@@ -46,8 +46,8 @@ export default function LocationInfo() {
             Contact
           </h2>
           <p className="text-gray-800 text-lg font-semibold">
-            <a href="tel:8135650010" className="hover:text-[#003d6b] transition-colors">
-              (813) 565-0010
+            <a href="tel:8134019820" className="hover:text-[#003d6b] transition-colors">
+              (813) 401-9820
             </a>
           </p>
           <p className="text-gray-600 text-sm mt-1">
