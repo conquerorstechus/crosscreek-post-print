@@ -138,7 +138,7 @@ export default function Footer() {
             </div>
 
             {/* Store Photo */}
-            {/* <div className="rounded-lg overflow-hidden shadow-lg">
+            <div className="rounded-lg overflow-hidden shadow-lg">
               <img
                 src="https://via.placeholder.com/400x200?text=Post+%26+Print+Store"
                 alt="Post & Print Store Front"
@@ -150,24 +150,24 @@ export default function Footer() {
       </div>
 
       {/* Footer Bottom */}
-            <div className="border-t border-gray-200 bg-gray-50">
-              <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-600">
-                <p>© {new Date().getFullYear()} Post & Print Tampa. All rights reserved.</p>
-                <div className="flex gap-6">
-                  <a href="#" className="hover:text-[#003d6b] transition-colors">
-                    Privacy Policy
-                  </a>
-                  <a
-                    href="https://www.facebook.com/115616746488408"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-[#003d6b] transition-colors"
-                  >
-                    Facebook
-                  </a>
-                </div>
-              </div>
-            </div>
-          </footer>
-          );
+      <div className="border-t border-gray-200 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-600">
+          <p>© {new Date().getFullYear()} Post & Print Tampa. All rights reserved.</p>
+          <div className="flex gap-6">
+            <a href="#" className="hover:text-[#003d6b] transition-colors">
+              Privacy Policy
+            </a>
+            <a
+              href="https://www.facebook.com/115616746488408"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#003d6b] transition-colors"
+            >
+              Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }
