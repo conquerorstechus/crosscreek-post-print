@@ -3,6 +3,11 @@ export default function Footer() {
     <footer className="bg-[#1a1a1a] text-gray-400">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 py-12">
+        {/* Logo Section */}
+        <div className="flex justify-center mb-8">
+          <img src="/logo-footer.png" alt="Post & Print Logo" className="h-16 w-auto object-contain" />
+        </div>
+
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           {/* Quick Actions */}
           <div>

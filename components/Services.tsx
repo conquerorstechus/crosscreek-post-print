@@ -4,13 +4,6 @@ import { useState } from "react";
 
 const featuredServices = [
   {
-    id: "design",
-    title: "Custom Design",
-    icon: "🌐",
-    description: "Professional design services to bring your vision to life with stunning graphics and layouts.",
-    image: "/service-custom-design.jpg",
-  },
-  {
     id: "print",
     title: "Digital Printing",
     icon: "🖨️",
