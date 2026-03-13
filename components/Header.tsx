@@ -5,48 +5,48 @@ import { useState } from "react";
 const printServices = [
   {
     column: [
-      "3D Printing",
-      "Business Cards",
-      "Copies",
-      "Envelopes",
-      "Invitations",
-      "Postcards",
-      "Signs",
-      "Vehicle Graphics",
+      { name: "3D Printing", url: "/services/3d-printing" },
+      { name: "Business Cards", url: "/services/business-cards" },
+      { name: "Copies", url: "/services/document-copying" },
+      { name: "Envelopes", url: "/services/custom-envelopes" },
+      { name: "Invitations", url: "/services/custom-invitations" },
+      { name: "Postcards", url: "/services/postcard-printing" },
+      { name: "Signs", url: "/services/custom-signs" },
+      { name: "Vehicle Graphics", url: "/services/vehicle-graphics" },
     ],
   },
   {
     column: [
-      "Banners",
-      "Calendars",
-      "Custom Greeting Cards",
-      "Every Door Direct Mail",
-      "Labels",
-      "Posters",
-      "Stationery",
-      "Yard Signs",
+      { name: "Banners", url: "/services/banner-printing" },
+      { name: "Calendars", url: "/services/custom-calendars" },
+      { name: "Custom Greeting Cards", url: "/services/greeting-card-printing" },
+      { name: "Every Door Direct Mail", url: "/services/eddm-mailing" },
+      { name: "Labels", url: "/services/custom-labels" },
+      { name: "Posters", url: "/services/poster-printing" },
+      { name: "Stationery", url: "/services/business-stationery" },
+      { name: "Yard Signs", url: "/services/yard-sign-printing" },
     ],
   },
   {
     column: [
-      "Blueprints",
-      "Canvas Wraps",
-      "Direct Mail",
-      "Flyers",
-      "Letterhead",
-      "Presentation Materials",
-      "Stickers",
+      { name: "Blueprints", url: "/services/blueprint-printing" },
+      { name: "Canvas Wraps", url: "/services/canvas-printing" },
+      { name: "Direct Mail", url: "/services/direct-mail-printing" },
+      { name: "Flyers", url: "/services/flyer-printing" },
+      { name: "Letterhead", url: "/services/letterhead-printing" },
+      { name: "Presentation Materials", url: "/services/presentation-printing" },
+      { name: "Stickers", url: "/services/custom-stickers" },
     ],
   },
   {
     column: [
-      "Brochures",
-      "Carbonless Forms",
-      "Door Hangers",
-      "Forms",
-      "Newsletters",
-      "Promotional Products",
-      "Trade Show Displays",
+      { name: "Brochures", url: "/services/brochure-printing" },
+      { name: "Carbonless Forms", url: "/services/carbonless-forms" },
+      { name: "Door Hangers", url: "/services/door-hanger-printing" },
+      { name: "Forms", url: "/services/custom-forms" },
+      { name: "Newsletters", url: "/services/newsletter-printing" },
+      { name: "Promotional Products", url: "/services/promotional-products" },
+      { name: "Trade Show Displays", url: "/services/trade-show-displays" },
     ],
   },
 ];
@@ -147,13 +147,13 @@ export default function Header() {
                     <div key={idx}>
                       <ul className="space-y-2">
                         {section.column.map((service) => (
-                          <li key={service}>
+                          <li key={service.url}>
                             <a
-                              href={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`}
+                              href={service.url}
                               className="text-xs text-gray-700 hover:text-[#66bb6a] flex items-start gap-2 leading-snug"
                             >
                               <span className="w-1.5 h-1.5 rounded-full bg-[#66bb6a] mt-1 shrink-0" />
-                              <span>{service}</span>
+                              <span>{service.name}</span>
                             </a>
                           </li>
                         ))}
