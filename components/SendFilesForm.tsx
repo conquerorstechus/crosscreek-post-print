@@ -143,7 +143,7 @@ export default function SendFilesForm() {
                 name="phoneArea"
                 value={formData.phoneArea}
                 onChange={handleInputChange}
-                maxLength="3"
+                maxLength={3}
                 placeholder="813"
                 className="w-16 px-3 py-2 border border-gray-300 rounded-lg text-center focus:outline-none focus:ring-2 focus:ring-[#003d6b] focus:border-transparent"
               />
@@ -153,7 +153,7 @@ export default function SendFilesForm() {
                 name="phoneExchange"
                 value={formData.phoneExchange}
                 onChange={handleInputChange}
-                maxLength="3"
+                maxLength={3}
                 placeholder="401"
                 className="w-16 px-3 py-2 border border-gray-300 rounded-lg text-center focus:outline-none focus:ring-2 focus:ring-[#003d6b] focus:border-transparent"
               />
@@ -163,7 +163,7 @@ export default function SendFilesForm() {
                 name="phoneNumber"
                 value={formData.phoneNumber}
                 onChange={handleInputChange}
-                maxLength="4"
+                maxLength={4}
                 placeholder="9820"
                 className="w-20 px-3 py-2 border border-gray-300 rounded-lg text-center focus:outline-none focus:ring-2 focus:ring-[#003d6b] focus:border-transparent"
               />
@@ -172,7 +172,7 @@ export default function SendFilesForm() {
                 name="extension"
                 value={formData.extension}
                 onChange={handleInputChange}
-                maxLength="6"
+                maxLength={6}
                 placeholder="ext"
                 className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-center text-sm focus:outline-none focus:ring-2 focus:ring-[#003d6b] focus:border-transparent"
               />
