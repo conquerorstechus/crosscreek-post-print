@@ -139,10 +139,10 @@ export default function Header() {
               <div
                 onMouseEnter={() => setOpenMenu("print")}
                 onMouseLeave={() => setOpenMenu(null)}
-                className="absolute left-0 mt-0 w-full bg-white border border-gray-200 rounded-lg shadow-lg p-6"
+                className="absolute left-0 mt-0 w-[800px] bg-white border border-gray-200 rounded-lg shadow-lg p-6"
               >
-                <h3 className="font-bold text-[#003d6b] mb-4">Print Services</h3>
-                <div className="grid grid-cols-4 gap-6">
+                <h3 className="font-bold text-[#003d6b] mb-4 text-sm">Print Services</h3>
+                <div className="grid grid-cols-4 gap-4">
                   {printServices.map((section, idx) => (
                     <div key={idx}>
                       <ul className="space-y-2">
@@ -150,10 +150,10 @@ export default function Header() {
                           <li key={service}>
                             <a
                               href={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`}
-                              className="text-sm text-gray-700 hover:text-[#66bb6a] flex items-center gap-2"
+                              className="text-xs text-gray-700 hover:text-[#66bb6a] flex items-start gap-2 leading-snug"
                             >
-                              <span className="w-1.5 h-1.5 rounded-full bg-[#66bb6a]" />
-                              {service}
+                              <span className="w-1.5 h-1.5 rounded-full bg-[#66bb6a] mt-1 shrink-0" />
+                              <span>{service}</span>
                             </a>
                           </li>
                         ))}
