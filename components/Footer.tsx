@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#003d6b] text-white">
+    <footer className="bg-white text-gray-900 border-t border-gray-200">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid md:grid-cols-3 gap-12">
@@ -14,25 +14,25 @@ export default function Footer() {
                 href="https://www.google.com/maps/dir/?api=1&destination=10861+Cross+Creek+Blvd,+Tampa,+FL+33647"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white text-[#003d6b] font-bold px-6 py-3 rounded text-center hover:bg-[#66bb6a] hover:text-white transition-colors uppercase text-sm tracking-wide"
+                className="bg-[#003d6b] text-white font-bold px-6 py-3 rounded text-center hover:bg-[#66bb6a] transition-colors uppercase text-sm tracking-wide"
               >
                 Get Directions
               </a>
               <a
                 href="/quote"
-                className="bg-white text-[#003d6b] font-bold px-6 py-3 rounded text-center hover:bg-[#66bb6a] hover:text-white transition-colors uppercase text-sm tracking-wide"
+                className="bg-[#003d6b] text-white font-bold px-6 py-3 rounded text-center hover:bg-[#66bb6a] transition-colors uppercase text-sm tracking-wide"
               >
                 Get a Print Quote
               </a>
               <a
                 href="/send-files"
-                className="bg-white text-[#003d6b] font-bold px-6 py-3 rounded text-center hover:bg-[#66bb6a] hover:text-white transition-colors uppercase text-sm tracking-wide"
+                className="bg-[#003d6b] text-white font-bold px-6 py-3 rounded text-center hover:bg-[#66bb6a] transition-colors uppercase text-sm tracking-wide"
               >
                 Send a Print File
               </a>
               <a
                 href="mailto:info@postandprint.com"
-                className="bg-white text-[#003d6b] font-bold px-6 py-3 rounded text-center hover:bg-[#66bb6a] hover:text-white transition-colors uppercase text-sm tracking-wide"
+                className="bg-[#003d6b] text-white font-bold px-6 py-3 rounded text-center hover:bg-[#66bb6a] transition-colors uppercase text-sm tracking-wide"
               >
                 Track a Package
               </a>
@@ -40,16 +40,16 @@ export default function Footer() {
           </div>
 
           {/* Middle Column - Store Info & Hours */}
-          <div className="border-l border-r border-blue-400 px-8">
+          <div className="border-l border-r border-gray-200 px-8">
             {/* Status */}
             <div className="mb-8">
-              <h3 className="text-xl font-bold text-white mb-2">Open Now</h3>
-              <p className="text-blue-100 text-sm">8:00 AM - 6:00 PM</p>
+              <h3 className="text-xl font-bold text-[#003d6b] mb-2">Open Now</h3>
+              <p className="text-gray-600 text-sm">8:00 AM - 6:00 PM</p>
             </div>
 
             {/* Address */}
             <div className="mb-8">
-              <p className="flex items-center gap-2 text-blue-100 mb-2">
+              <p className="flex items-center gap-2 text-gray-700 mb-2">
                 <span className="text-lg">📍</span>
                 <span className="text-sm font-semibold">
                   10861 Cross Creek Blvd<br />
@@ -60,11 +60,11 @@ export default function Footer() {
 
             {/* Phone */}
             <div className="mb-8">
-              <p className="flex items-center gap-2 text-blue-100 mb-2">
+              <p className="flex items-center gap-2 text-gray-700 mb-2">
                 <span className="text-lg">📞</span>
                 <a
                   href="tel:8134019820"
-                  className="text-lg font-bold text-white hover:text-[#66bb6a] transition-colors"
+                  className="text-lg font-bold text-[#003d6b] hover:text-[#66bb6a] transition-colors"
                 >
                   (813) 401-9820
                 </a>
@@ -73,11 +73,11 @@ export default function Footer() {
 
             {/* Email */}
             <div className="mb-8">
-              <p className="flex items-center gap-2 text-blue-100 mb-2">
+              <p className="flex items-center gap-2 text-gray-700 mb-2">
                 <span className="text-lg">✉</span>
                 <a
                   href="mailto:info@postandprint.com"
-                  className="text-sm font-semibold text-white hover:text-[#66bb6a] transition-colors"
+                  className="text-sm font-semibold text-[#003d6b] hover:text-[#66bb6a] transition-colors"
                 >
                   info@postandprint.com
                 </a>
@@ -86,35 +86,35 @@ export default function Footer() {
 
             {/* Hours Table */}
             <div>
-              <h4 className="font-bold text-white mb-3 text-sm">Hours of Operation</h4>
-              <table className="text-xs text-blue-100 space-y-1 w-full">
+              <h4 className="font-bold text-[#003d6b] mb-3 text-sm">Hours of Operation</h4>
+              <table className="text-xs text-gray-600 space-y-1 w-full">
                 <tbody>
                   <tr>
-                    <td className="font-semibold pr-4">Mon</td>
+                    <td className="font-semibold pr-4 text-gray-700">Mon</td>
                     <td>8:00 AM - 6:00 PM</td>
                   </tr>
                   <tr>
-                    <td className="font-semibold pr-4">Tue</td>
+                    <td className="font-semibold pr-4 text-gray-700">Tue</td>
                     <td>8:00 AM - 6:00 PM</td>
                   </tr>
                   <tr>
-                    <td className="font-semibold pr-4">Wed</td>
+                    <td className="font-semibold pr-4 text-gray-700">Wed</td>
                     <td>8:00 AM - 6:00 PM</td>
                   </tr>
                   <tr>
-                    <td className="font-semibold pr-4">Thu</td>
+                    <td className="font-semibold pr-4 text-gray-700">Thu</td>
                     <td>8:00 AM - 6:00 PM</td>
                   </tr>
                   <tr>
-                    <td className="font-semibold pr-4">Fri</td>
+                    <td className="font-semibold pr-4 text-gray-700">Fri</td>
                     <td>8:00 AM - 6:00 PM</td>
                   </tr>
                   <tr>
-                    <td className="font-semibold pr-4">Sat</td>
+                    <td className="font-semibold pr-4 text-gray-700">Sat</td>
                     <td>9:00 AM - 5:00 PM</td>
                   </tr>
                   <tr>
-                    <td className="font-semibold pr-4">Sun</td>
+                    <td className="font-semibold pr-4 text-gray-700">Sun</td>
                     <td>Closed</td>
                   </tr>
                 </tbody>
@@ -150,18 +150,18 @@ export default function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="border-t border-blue-400 bg-[#002a52] py-6">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-blue-200">
+      <div className="border-t border-gray-200 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-600">
           <p>© {new Date().getFullYear()} Post & Print Tampa. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-[#66bb6a] transition-colors">
+            <a href="#" className="hover:text-[#003d6b] transition-colors">
               Privacy Policy
             </a>
             <a
               href="https://www.facebook.com/115616746488408"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#66bb6a] transition-colors"
+              className="hover:text-[#003d6b] transition-colors"
             >
               Facebook
             </a>
