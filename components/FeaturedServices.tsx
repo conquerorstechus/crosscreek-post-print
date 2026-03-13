@@ -54,7 +54,7 @@ export default function FeaturedServices() {
               <h3 className="text-lg font-bold text-gray-900">{service.title}</h3>
               <p className="text-sm text-gray-600 flex-1">{service.description}</p>
               <a
-                href="mailto:fl178@postnet.com"
+                href="mailto:info@postandprint.com"
                 className="text-sm font-semibold text-[#003d6b] hover:text-[#66bb6a] transition-colors self-start"
               >
                 {service.cta} →

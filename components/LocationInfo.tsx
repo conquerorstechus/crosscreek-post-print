@@ -52,15 +52,15 @@ export default function LocationInfo() {
           </p>
           <p className="text-gray-600 text-sm mt-1">
             <a
-              href="mailto:fl178@postnet.com"
+              href="mailto:info@postandprint.com"
               className="hover:text-[#003d6b] transition-colors"
             >
-              fl178@postnet.com
+              info@postandprint.com
             </a>
           </p>
           <div className="mt-4 flex gap-3">
             <a
-              href="mailto:fl178@postnet.com"
+              href="mailto:info@postandprint.com"
               className="text-sm bg-[#003d6b] text-white px-4 py-2 rounded font-semibold hover:bg-[#66bb6a] hover:text-[#003d6b] transition-colors"
             >
               Send a Print File

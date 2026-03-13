@@ -72,10 +72,10 @@ export default function ContactPage() {
                 </h3>
                 <p className="text-gray-700">
                   <a
-                    href="mailto:fl178@postnet.com"
+                    href="mailto:info@postandprint.com"
                     className="text-[#003d6b] hover:text-[#66bb6a] transition-colors"
                   >
-                    fl178@postnet.com
+                    info@postandprint.com
                   </a>
                 </p>
               </div>

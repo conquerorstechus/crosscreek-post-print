@@ -29,7 +29,7 @@ export default function ContactForm() {
 
     try {
       // Send email using mailto for now
-      const mailtoLink = `mailto:fl178@postnet.com?subject=${encodeURIComponent(
+      const mailtoLink = `mailto:info@postandprint.com?subject=${encodeURIComponent(
         formData.subject
       )}&body=${encodeURIComponent(
         `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`

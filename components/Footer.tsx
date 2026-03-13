@@ -20,21 +20,21 @@ export default function Footer() {
                 <span>Get Directions</span>
               </a>
               <a
-                href="mailto:fl178@postnet.com"
+                href="mailto:info@postandprint.com"
                 className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
               >
                 <span className="text-lg">📄</span>
                 <span>Get a Quote</span>
               </a>
               <a
-                href="mailto:fl178@postnet.com"
+                href="mailto:info@postandprint.com"
                 className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
               >
                 <span className="text-lg">📤</span>
                 <span>Send a File</span>
               </a>
               <a
-                href="mailto:fl178@postnet.com"
+                href="mailto:info@postandprint.com"
                 className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
               >
                 <span className="text-lg">📦</span>
@@ -83,10 +83,10 @@ export default function Footer() {
               </h4>
               <p className="text-sm">
                 <a
-                  href="mailto:fl178@postnet.com"
+                  href="mailto:info@postandprint.com"
                   className="text-gray-400 hover:text-[#66bb6a] transition-colors"
                 >
-                  fl178@postnet.com
+                  info@postandprint.com
                 </a>
               </p>
             </div>
