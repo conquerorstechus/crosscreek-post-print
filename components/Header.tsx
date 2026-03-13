@@ -18,6 +18,9 @@ export default function Header() {
           <a href="/#location" className="hover:text-[#003d6b] transition-colors">
             Location
           </a>
+          <a href="/estimate" className="hover:text-[#003d6b] transition-colors">
+            Get Estimate
+          </a>
           <a href="/contact" className="hover:text-[#003d6b] transition-colors">
             Contact
           </a>
