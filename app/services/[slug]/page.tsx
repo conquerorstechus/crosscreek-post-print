@@ -321,10 +321,205 @@ const serviceDetails: Record<string, any> = {
       },
     ],
   },
+  // Design Services
+  "graphic-design": {
+    title: "Graphic Design",
+    description: "Professional graphic design services to bring your brand to life. Our creative team specializes in logo design, branding, marketing materials, and custom illustrations.",
+    sizes: [],
+    materials: ["Digital Files", "Print Ready Files", "Vector Graphics"],
+    finishes: [],
+    pricing: [
+      { option: "Logo Design", price: "$300-1000" },
+      { option: "Business Branding Package", price: "$1000-3000" },
+      { option: "Marketing Collateral Design", price: "$200-500 per item" },
+      { option: "Custom Illustration", price: "Call for pricing" },
+    ],
+    image: "/service-custom-design.jpg",
+    faqs: [
+      {
+        question: "How long does the design process take?",
+        answer: "Typical design projects take 1-3 weeks depending on complexity and revisions."
+      },
+      {
+        question: "How many revisions are included?",
+        answer: "We include 2-3 rounds of revisions in most design packages. Additional revisions available."
+      },
+      {
+        question: "Do you provide all file formats?",
+        answer: "Yes, we provide files in all formats you need - PDF, AI, PSD, PNG, JPEG, SVG, etc."
+      },
+      {
+        question: "Can I see samples of your design work?",
+        answer: "Yes, our portfolio is available on request. Contact us to schedule a consultation."
+      },
+    ],
+  },
+  "branding": {
+    title: "Branding",
+    description: "Complete branding solutions including logo design, brand guidelines, color palettes, and identity systems. Create a cohesive brand presence across all platforms.",
+    sizes: [],
+    materials: ["Digital Brand Guidelines", "Logo Files", "Color Palettes", "Typography"],
+    finishes: [],
+    pricing: [
+      { option: "Starter Branding", price: "$1500-2500" },
+      { option: "Complete Brand Identity", price: "$3000-7500" },
+      { option: "Brand Guidelines Development", price: "$500-1500" },
+      { option: "Rebrand Existing Business", price: "Call for pricing" },
+    ],
+    image: "/service-custom-design.jpg",
+    faqs: [
+      {
+        question: "What's included in a branding package?",
+        answer: "Logo design, color palette, typography selection, brand guidelines, and application mockups."
+      },
+      {
+        question: "How long does full branding take?",
+        answer: "Complete branding typically takes 4-8 weeks from initial consultation to delivery."
+      },
+      {
+        question: "Can you help us rebrand an existing business?",
+        answer: "Yes, we specialize in rebranding projects while maintaining brand equity and customer recognition."
+      },
+      {
+        question: "Do you provide brand strategy consulting?",
+        answer: "Yes, we include brand strategy and positioning analysis in our comprehensive packages."
+      },
+    ],
+  },
+  // Shipping Services
+  "ups-shipping": {
+    title: "UPS Shipping",
+    description: "Fast and reliable UPS shipping services. Ground, expedited, and overnight options available. We handle all packaging and label creation.",
+    sizes: [],
+    materials: ["Various Box Sizes", "Packing Materials", "Label Printing"],
+    finishes: [],
+    pricing: [
+      { option: "UPS Ground", price: "$8-25 per shipment" },
+      { option: "UPS Express", price: "$20-50 per shipment" },
+      { option: "UPS Overnight", price: "$40-100 per shipment" },
+      { option: "UPS International", price: "Call for pricing" },
+    ],
+    image: "/service-shipping.jpg",
+    faqs: [
+      {
+        question: "What are your shipping hours?",
+        answer: "We accept shipments during our business hours: Mon-Fri 8AM-6PM, Sat 9AM-5PM."
+      },
+      {
+        question: "Do you provide tracking?",
+        answer: "Yes, all shipments include full tracking and insurance options."
+      },
+      {
+        question: "Can you ship internationally?",
+        answer: "Yes, we offer international UPS shipping to most countries worldwide."
+      },
+      {
+        question: "Do you offer packaging supplies?",
+        answer: "Yes, we provide boxes, tape, padding, and all necessary packing materials."
+      },
+    ],
+  },
+  "fedex-shipping": {
+    title: "FedEx Shipping",
+    description: "Comprehensive FedEx shipping solutions including ground and express options. Door-to-door delivery with professional handling.",
+    sizes: [],
+    materials: ["Various Box Sizes", "Packing Materials", "Label Printing"],
+    finishes: [],
+    pricing: [
+      { option: "FedEx Ground", price: "$7-20 per shipment" },
+      { option: "FedEx Express", price: "$25-60 per shipment" },
+      { option: "FedEx Overnight", price: "$45-120 per shipment" },
+      { option: "FedEx International", price: "Call for pricing" },
+    ],
+    image: "/service-shipping.jpg",
+    faqs: [
+      {
+        question: "What's the difference between FedEx Ground and Express?",
+        answer: "Ground is 3-5 days, Express is 2-3 days, and Overnight is next business day delivery."
+      },
+      {
+        question: "Do you handle signature requirements?",
+        answer: "Yes, we can arrange signature confirmation for valuable shipments."
+      },
+      {
+        question: "Are your rates competitive?",
+        answer: "Yes, as a business partner we offer discounted FedEx rates for regular shippers."
+      },
+      {
+        question: "Can you print custom labels?",
+        answer: "Yes, we can print FedEx labels with your company branding and information."
+      },
+    ],
+  },
+  "usps-shipping": {
+    title: "USPS Shipping",
+    description: "Affordable USPS shipping for domestic and international packages. Flat-rate boxes and Priority Mail options available.",
+    sizes: [],
+    materials: ["USPS Priority Boxes", "Flat Rate Options", "Regional Rate"],
+    finishes: [],
+    pricing: [
+      { option: "Priority Mail", price: "$5-15 per shipment" },
+      { option: "Priority Mail Express", price: "$15-35 per shipment" },
+      { option: "Flat Rate Boxes", price: "$8-25 per box" },
+      { option: "International", price: "$10-50 per shipment" },
+    ],
+    image: "/service-shipping.jpg",
+    faqs: [
+      {
+        question: "What's the cheapest USPS option?",
+        answer: "USPS Priority Mail is affordable and includes tracking and $100 insurance."
+      },
+      {
+        question: "Can I use Flat Rate boxes?",
+        answer: "Yes, USPS Flat Rate boxes ship anywhere in the US for a flat fee regardless of weight."
+      },
+      {
+        question: "Do you offer bulk mailing discounts?",
+        answer: "Yes, we offer discounted rates for high-volume mailers and direct mail campaigns."
+      },
+      {
+        question: "How does First Class differ from Priority?",
+        answer: "First Class is slower (3-5 days) but cheaper. Priority is 2-3 days and includes tracking."
+      },
+    ],
+  },
+  "document-copying": {
+    title: "Document Copying",
+    description: "Professional document copying services. Black & white and color copying available with various paper stock options.",
+    sizes: [],
+    materials: ["20lb White", "Colored Paper", "Cardstock", "Specialty Paper"],
+    finishes: ["Single-sided", "Double-sided", "Collated", "Stapled"],
+    pricing: [
+      { option: "B&W Copy (per page)", price: "$0.05-0.15" },
+      { option: "Color Copy (per page)", price: "$0.25-0.50" },
+      { option: "Large Format Copy", price: "$1-3 per page" },
+      { option: "Bulk Copy Discount", price: "Call for pricing" },
+    ],
+    image: "/service-digital-printing.jpg",
+    faqs: [
+      {
+        question: "What's the difference between copying and printing?",
+        answer: "Copying scans an original document, printing uses digital files. Copying is faster for urgent needs."
+      },
+      {
+        question: "Do you offer collating and binding?",
+        answer: "Yes, we can collate, staple, fold, and bind your copied documents."
+      },
+      {
+        question: "Can you copy from books and bound materials?",
+        answer: "Yes, our equipment handles books and bound materials without damage."
+      },
+      {
+        question: "What's your fastest turnaround?",
+        answer: "Most copy jobs are completed the same day or within hours of submission."
+      },
+    ],
+  },
 };
 
-export default function ServicePage({ params }: { params: { slug: string } }) {
-  const service = serviceDetails[params.slug];
+export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const service = serviceDetails[slug];
 
   if (!service) {
     return (
@@ -332,7 +527,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Service Not Found</h1>
           <p className="text-lg text-gray-600 mb-8">
-            Sorry, we couldn't find the service you're looking for.
+            The service "{slug}" is currently unavailable. Please check back soon or contact us for details.
           </p>
           <a
             href="/#services"
