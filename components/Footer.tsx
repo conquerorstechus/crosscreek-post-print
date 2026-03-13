@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           {/* Logo Section */}
           <div className="md:col-span-3 mb-4">
-            <img src="/logo-full.png" alt="Post & Print Logo" className="h-16 w-auto object-contain" />
+            <img src="/logo-footer.png" alt="Post & Print Logo" className="h-16 w-auto object-contain" />
           </div>
 
           {/* Quick Actions */}
