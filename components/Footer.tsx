@@ -4,6 +4,11 @@ export default function Footer() {
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+          {/* Logo Section */}
+          <div className="md:col-span-3 mb-4">
+            <img src="/logo-full.png" alt="Post & Print Logo" className="h-16 w-auto object-contain" />
+          </div>
+
           {/* Quick Actions */}
           <div>
             <h3 className="text-xs uppercase tracking-widest text-gray-300 font-bold mb-6">
@@ -11,7 +16,7 @@ export default function Footer() {
             </h3>
             <div className="space-y-3 flex flex-col">
               <a
-                href="https://www.google.com/maps/dir/?api=1&destination=6421+N.+Florida+Ave+Ste+D,+Tampa,+FL+33604"
+                href="https://www.google.com/maps/dir/?api=1&destination=10861+Cross+Creek+Blvd,+Tampa,+FL+33647"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
@@ -20,21 +25,21 @@ export default function Footer() {
                 <span>Get Directions</span>
               </a>
               <a
-                href="mailto:fl178@postnet.com"
+                href="mailto:info@postandprint.com"
                 className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
               >
                 <span className="text-lg">📄</span>
                 <span>Get a Quote</span>
               </a>
               <a
-                href="mailto:fl178@postnet.com"
+                href="mailto:info@postandprint.com"
                 className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
               >
                 <span className="text-lg">📤</span>
                 <span>Send a File</span>
               </a>
               <a
-                href="mailto:fl178@postnet.com"
+                href="mailto:info@postandprint.com"
                 className="flex items-center gap-3 text-sm text-gray-300 hover:text-[#66bb6a] transition-colors py-2"
               >
                 <span className="text-lg">📦</span>
@@ -55,9 +60,9 @@ export default function Footer() {
                 Address
               </h4>
               <address className="not-italic text-sm text-gray-400 leading-relaxed">
-                6421 N. Florida Ave, Ste D
+                10861 Cross Creek Blvd
                 <br />
-                Tampa, FL 33604
+                Tampa, FL 33647
               </address>
             </div>
 
@@ -68,10 +73,10 @@ export default function Footer() {
               </h4>
               <p className="text-sm">
                 <a
-                  href="tel:8135650010"
+                  href="tel:8134019820"
                   className="text-gray-400 hover:text-[#66bb6a] transition-colors"
                 >
-                  (813) 565-0010
+                  (813) 401-9820
                 </a>
               </p>
             </div>
@@ -83,10 +88,10 @@ export default function Footer() {
               </h4>
               <p className="text-sm">
                 <a
-                  href="mailto:fl178@postnet.com"
+                  href="mailto:info@postandprint.com"
                   className="text-gray-400 hover:text-[#66bb6a] transition-colors"
                 >
-                  fl178@postnet.com
+                  info@postandprint.com
                 </a>
               </p>
             </div>
@@ -110,7 +115,7 @@ export default function Footer() {
               Location
             </h3>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.8854384654943!2d-82.45138572346444!3d28.050638474243598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c7b8c8c8c8c9%3A0x1234567890abcdef!2s6421%20N%20Florida%20Ave%2C%20Tampa%2C%20FL%2033604!5e0!3m2!1sen!2sus!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.1234567890123!2d-82.45678!3d28.0123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c1234567890%3A0x1234567890abcdef!2s10861%20Cross%20Creek%20Blvd%2C%20Tampa%2C%20FL%2033647!5e0!3m2!1sen!2sus!4v1234567890"
               width="100%"
               height={250}
               style={{ border: 0, borderRadius: "0.5rem" } as React.CSSProperties}

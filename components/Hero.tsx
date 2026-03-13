@@ -14,13 +14,19 @@ export default function Hero() {
           </p>
           <div className="flex flex-wrap gap-3">
             <a
-              href="mailto:fl178@postnet.com"
+              href="/quote"
               className="bg-[#66bb6a] text-[#003d6b] font-semibold px-6 py-3 rounded hover:bg-[#20b2aa] hover:text-white transition-colors"
             >
               Get a Print Quote
             </a>
             <a
-              href="https://www.google.com/maps/dir/?api=1&destination=6421+N.+Florida+Ave+Ste+D,+Tampa,+FL+33604"
+              href="/send-files"
+              className="bg-white text-[#003d6b] font-semibold px-6 py-3 rounded hover:bg-[#66bb6a] hover:text-white transition-colors"
+            >
+              Send Print Files
+            </a>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=10861+Cross+Creek+Blvd,+Tampa,+FL+33647"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 border-[#66bb6a] text-white font-semibold px-6 py-3 rounded hover:bg-[#66bb6a] hover:text-[#003d6b] transition-colors"

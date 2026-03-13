@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PostNet Tampa | Design, Print & Shipping | 6421 N. Florida Ave",
+  title: "Post & Print Tampa | Design, Print & Shipping | 10861 Cross Creek Blvd",
   description:
-    "PostNet Tampa on 6421 N. Florida Ave offers design, print, and shipping solutions. Locally owned and operated. Call (813) 565-0010.",
+    "Post & Print Tampa on 10861 Cross Creek Blvd offers design, print, and shipping solutions. Locally owned and operated. Call (813) 401-9820.",
 };
 
 export default function RootLayout({
