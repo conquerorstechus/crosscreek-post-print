@@ -12,9 +12,7 @@ export default function Header() {
           <a href="/#services" className="hover:text-[#003d6b] transition-colors">
             Services
           </a>
-          <a href="/#hours" className="hover:text-[#003d6b] transition-colors">
-            Hours
-          </a>
+
           <a href="/#location" className="hover:text-[#003d6b] transition-colors">
             Location
           </a>
