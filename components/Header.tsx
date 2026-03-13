@@ -2,80 +2,80 @@
 
 import { useState } from "react";
 
-const designServices = [
-  { name: "Graphic Design", url: "/design/graphic-design" },
-  { name: "Branding", url: "/design/branding" },
-  { name: "Logo Design", url: "/design/logo-design" },
-  { name: "Marketing Materials", url: "/design/marketing-materials" },
-  { name: "Packaging Design", url: "/design/packaging-design" },
-  { name: "Web Design", url: "/design/web-design" },
-];
-
 const printServices = [
   {
     column: [
-      { name: "3D Printing", url: "/print/3d-printing" },
-      { name: "Business Cards", url: "/print/business-cards" },
-      { name: "Copies", url: "/print/copies" },
-      { name: "Envelopes", url: "/print/envelopes" },
-      { name: "Invitations", url: "/print/invitations" },
-      { name: "Postcards", url: "/print/postcards" },
-      { name: "Signs", url: "/print/signs" },
-      { name: "Vehicle Graphics", url: "/print/vehicle-graphics" },
+      { name: "3D Printing", url: "/services/3d-printing" },
+      { name: "Business Cards", url: "/services/business-cards" },
+      { name: "Copies", url: "/services/document-copying" },
+      { name: "Envelopes", url: "/services/custom-envelopes" },
+      { name: "Invitations", url: "/services/custom-invitations" },
+      { name: "Postcards", url: "/services/postcard-printing" },
+      { name: "Signs", url: "/services/custom-signs" },
+      { name: "Vehicle Graphics", url: "/services/vehicle-graphics" },
     ],
   },
   {
     column: [
-      { name: "Banners", url: "/print/banners" },
-      { name: "Calendars", url: "/print/calendars" },
-      { name: "Custom Greeting Cards", url: "/print/custom-greeting-cards" },
-      { name: "Every Door Direct Mail", url: "/print/every-door-direct-mail" },
-      { name: "Labels", url: "/print/labels" },
-      { name: "Posters", url: "/print/posters" },
-      { name: "Stationery", url: "/print/stationery" },
-      { name: "Yard Signs", url: "/print/yard-signs" },
+      { name: "Banners", url: "/services/banner-printing" },
+      { name: "Calendars", url: "/services/custom-calendars" },
+      { name: "Custom Greeting Cards", url: "/services/greeting-card-printing" },
+      { name: "Every Door Direct Mail", url: "/services/eddm-mailing" },
+      { name: "Labels", url: "/services/custom-labels" },
+      { name: "Posters", url: "/services/poster-printing" },
+      { name: "Stationery", url: "/services/business-stationery" },
+      { name: "Yard Signs", url: "/services/yard-sign-printing" },
     ],
   },
   {
     column: [
-      { name: "Blueprints", url: "/print/blueprints" },
-      { name: "Canvas Wraps", url: "/print/canvas-wraps" },
-      { name: "Direct Mail", url: "/print/direct-mail" },
-      { name: "Flyers", url: "/print/flyers" },
-      { name: "Letterhead", url: "/print/letterhead" },
-      { name: "Presentation Materials", url: "/print/presentation-materials" },
-      { name: "Stickers", url: "/print/stickers" },
+      { name: "Blueprints", url: "/services/blueprint-printing" },
+      { name: "Canvas Wraps", url: "/services/canvas-printing" },
+      { name: "Direct Mail", url: "/services/direct-mail-printing" },
+      { name: "Flyers", url: "/services/flyer-printing" },
+      { name: "Letterhead", url: "/services/letterhead-printing" },
+      { name: "Presentation Materials", url: "/services/presentation-printing" },
+      { name: "Stickers", url: "/services/custom-stickers" },
     ],
   },
   {
     column: [
-      { name: "Brochures", url: "/print/brochures" },
-      { name: "Carbonless Forms", url: "/print/carbonless-forms" },
-      { name: "Door Hangers", url: "/print/door-hangers" },
-      { name: "Forms", url: "/print/forms" },
-      { name: "Newsletters", url: "/print/newsletters" },
-      { name: "Promotional Products", url: "/print/promotional-products" },
-      { name: "Trade Show Displays", url: "/print/trade-show-displays" },
+      { name: "Brochures", url: "/services/brochure-printing" },
+      { name: "Carbonless Forms", url: "/services/carbonless-forms" },
+      { name: "Door Hangers", url: "/services/door-hanger-printing" },
+      { name: "Forms", url: "/services/custom-forms" },
+      { name: "Newsletters", url: "/services/newsletter-printing" },
+      { name: "Promotional Products", url: "/services/promotional-products" },
+      { name: "Trade Show Displays", url: "/services/trade-show-displays" },
     ],
   },
+];
+
+const designServices = [
+  "Graphic Design",
+  "Branding",
+  "Logo Design",
+  "Marketing Materials",
+  "Packaging Design",
+  "Web Design",
 ];
 
 const shipServices = [
-  { name: "UPS Shipping", url: "/ship/ups-shipping" },
-  { name: "FedEx Shipping", url: "/ship/fedex-shipping" },
-  { name: "USPS", url: "/ship/usps" },
-  { name: "DHL", url: "/ship/dhl" },
-  { name: "International Shipping", url: "/ship/international-shipping" },
-  { name: "Packaging Services", url: "/ship/packaging-services" },
+  "UPS Shipping",
+  "FedEx Shipping",
+  "USPS",
+  "DHL",
+  "International Shipping",
+  "Packaging Services",
 ];
 
 const moreServices = [
-  { name: "Binding", url: "/services/binding" },
-  { name: "Laminating", url: "/services/laminating" },
-  { name: "Mailbox Rental", url: "/services/mailbox-rental" },
-  { name: "Notary Public", url: "/services/notary-public" },
-  { name: "Scanning Services", url: "/services/scanning-services" },
-  { name: "Passport Photos", url: "/services/passport-photos" },
+  "Binding",
+  "Laminating",
+  "Mailbox Rental",
+  "Notary Public",
+  "Scanning Services",
+  "Passport Photos",
 ];
 
 export default function Header() {
@@ -110,13 +110,13 @@ export default function Header() {
                 <h3 className="font-bold text-[#003d6b] mb-3 text-sm">Design Services</h3>
                 <ul className="space-y-2">
                   {designServices.map((service) => (
-                    <li key={service.url}>
+                    <li key={service}>
                       <a
-                        href={service.url}
+                        href={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`}
                         className="text-sm text-gray-700 hover:text-[#66bb6a] flex items-center gap-2"
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-[#66bb6a]" />
-                        {service.name}
+                        {service}
                       </a>
                     </li>
                   ))}
@@ -184,13 +184,13 @@ export default function Header() {
                 <h3 className="font-bold text-[#003d6b] mb-3 text-sm">Shipping Services</h3>
                 <ul className="space-y-2">
                   {shipServices.map((service) => (
-                    <li key={service.url}>
+                    <li key={service}>
                       <a
-                        href={service.url}
+                        href={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`}
                         className="text-sm text-gray-700 hover:text-[#66bb6a] flex items-center gap-2"
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-[#66bb6a]" />
-                        {service.name}
+                        {service}
                       </a>
                     </li>
                   ))}
@@ -218,13 +218,13 @@ export default function Header() {
                 <h3 className="font-bold text-[#003d6b] mb-3 text-sm">More Services</h3>
                 <ul className="space-y-2">
                   {moreServices.map((service) => (
-                    <li key={service.url}>
+                    <li key={service}>
                       <a
-                        href={service.url}
+                        href={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`}
                         className="text-sm text-gray-700 hover:text-[#66bb6a] flex items-center gap-2"
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-[#66bb6a]" />
-                        {service.name}
+                        {service}
                       </a>
                     </li>
                   ))}
