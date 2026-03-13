@@ -4,6 +4,11 @@ export default function Footer() {
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+          {/* Logo Section */}
+          <div className="md:col-span-3 mb-4">
+            <img src="/logo-full.png" alt="Post & Print Logo" className="h-16 w-auto object-contain" />
+          </div>
+
           {/* Quick Actions */}
           <div>
             <h3 className="text-xs uppercase tracking-widest text-gray-300 font-bold mb-6">
