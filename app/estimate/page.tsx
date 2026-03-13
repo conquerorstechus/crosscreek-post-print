@@ -9,6 +9,17 @@ export default function EstimatePage() {
   return (
     <main className="bg-[#003d6b] min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4">
+        {/* Back to Home Button */}
+        <div className="mb-8">
+          <a
+            href="/"
+            className="inline-flex items-center gap-2 text-white hover:text-[#66bb6a] transition-colors font-semibold text-sm"
+          >
+            <span>←</span>
+            <span>Back to Home</span>
+          </a>
+        </div>
+
         {/* Page Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-extrabold text-white mb-3">Get an Estimate</h1>
