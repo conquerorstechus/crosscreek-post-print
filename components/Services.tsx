@@ -3,13 +3,7 @@
 import { useState } from "react";
 
 const featuredServices = [
-  {
-    id: "design",
-    title: "Custom Design",
-    icon: "🌐",
-    description: "Professional design services to bring your vision to life with stunning graphics and layouts.",
-    image: "/service-custom-design.jpg",
-  },
+
   {
     id: "print",
     title: "Digital Printing",
@@ -178,11 +172,10 @@ export default function Services() {
               <button
                 key={cat.id}
                 onClick={() => setActiveTab(cat.id)}
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-colors ${
-                  activeTab === cat.id
+                className={`px-5 py-2 rounded-full text-sm font-semibold transition-colors ${activeTab === cat.id
                     ? "bg-[#003d6b] text-white"
                     : "bg-white border border-gray-200 text-gray-700 hover:border-[#003d6b] hover:text-[#003d6b]"
-                }`}
+                  }`}
               >
                 {cat.icon} {cat.label}
               </button>
